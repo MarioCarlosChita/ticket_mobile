@@ -1,0 +1,20 @@
+import 'package:dio/dio.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:get_it/get_it.dart';
+import 'package:ticket_mobile/core/network/app_http_client.dart';
+import 'package:ticket_mobile/core/services/share_service.dart';
+import 'package:ticket_mobile/core/services/storage_service.dart';
+import 'package:ticket_mobile/features/auth/data/data_source/auth_remote_data_source.dart';
+import 'package:ticket_mobile/features/auth/data/repository/auth_repository_impl.dart';
+import 'package:ticket_mobile/features/auth/domain/repository/auth_repository.dart';
+import 'package:ticket_mobile/features/auth/domain/usecases/get_user_member_use_case.dart';
+import 'package:ticket_mobile/features/auth/domain/usecases/sign_in_use_case.dart';
+import 'package:ticket_mobile/features/auth/domain/usecases/sign_out_use_case.dart';
+import 'package:ticket_mobile/features/payment/data/data_source/payment_remote_data_source.dart';
+import 'package:ticket_mobile/features/payment/data/repository/payment_repository_impl.dart';
+import 'package:ticket_mobile/features/payment/domain/repository/payment_repository.dart';
+import 'package:ticket_mobile/features/payment/domain/usecases/ask_payment_use_case.dart';
+import 'package:ticket_mobile/features/payment/domain/usecases/get_map_sof_payments_use_case.dart';
+import 'package:ticket_mobile/features/payment/domain/usecases/get_payments_use_case.dart';
+
+part 'dependecy_initializer.dart';
